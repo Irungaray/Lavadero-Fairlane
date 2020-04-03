@@ -1,0 +1,753 @@
+/* ------------------------- */
+/* Fuentes */
+/* ------------------------- */
+
+@font-face{
+    font-family: 'Freshman';
+    src: url('../fonts/Freshman.TTF');
+}
+
+@font-face{
+    font-family: 'Fabulous';
+    src: url('../fonts/Fabulous.TTF');
+}
+
+@font-face{
+    font-family: 'Tattoo';
+    src: url('../fonts/Tattoo.TTF');
+}
+
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------- */
+/* Clases de Fullpage.js */
+/* ------------------------- */
+
+#fp-nav ul li a span {
+    background: white;
+}
+
+#fp-nav ul li .fp-tooltip {
+    font-family: freshman;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+}
+
+/* ------------------------- */
+/* Menu de navegacion */
+/* ------------------------- */
+
+.nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 70;
+    width: 30%;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.nav li, .nav a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-family: freshman;
+    font-size: 15px;
+    color: white;
+    text-shadow: 10px 7px 6px black;
+    transition: .5s ease;
+}
+
+.nav li.active {
+    border-bottom: 2px solid white;
+}
+
+/* ------------------------- */
+/* Inicio */
+/* ------------------------- */
+
+.header {
+    background: url("../images/uno.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.header .contenedor-titulo, .header .contenedor-icono, .informacion, .irungaray, .precios {
+    position: relative;
+    z-index: 99;
+    color: white;
+    text-shadow: 10px 7px 6px black;
+}
+
+.header .titulo .lavadero {
+    font-family: freshman;
+    font-size: 43px;
+    position: absolute;
+    z-index: 99px;
+    right: 25%;
+    top: -100%;
+}
+
+.header .titulo .fairlane {
+    position: absolute;
+    z-index: 99px;
+    font-family: fabulous;
+    font-size: 220px;
+    left: 25%;
+    top: -250%;
+}
+
+.header .irungaray {
+    font-family: tattoo;
+    font-size: 26px;
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    right: 1%;
+}
+
+.header .contenedor-icono {
+    position: absolute;
+    z-index: 99;
+    bottom: 3%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    animation: bajar-subir 1s ease infinite;
+}
+
+/* ------------------------- */
+/* Animación */
+/* ------------------------- */
+
+@keyframes bajar-subir {
+    0% { transform: translateY(20px); }
+    25% { transform: translateY(0px); }
+    100% { transform: translateY(20px); }
+}
+
+/* ------------------------- */
+/* Información */
+/* ------------------------- */
+
+.informacion article:nth-child(1) {
+    background-image: url('../images/dos.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.informacion .info .information {
+    position: relative;
+    z-index: 99;
+}
+
+.informacion .aprovecha{
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 120px;
+    left: 3%;
+    top: -450%;
+
+}
+
+.informacion .nuestros {
+    position: absolute;
+    font-family: freshman;
+    font-size: 70px;
+    left: 10%;
+    top: -162%;
+}
+
+.informacion .increibles {
+    position: absolute;
+    z-index: 178;
+    font-family: fabulous;
+    font-size: 240px;
+    right: 33%;
+    top: -2%;
+
+}
+
+.informacion .preciosz {
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 120px;
+    right: 3%;
+    top: 390%;
+
+}
+
+.informacion .irungaray {
+    position: absolute;
+    z-index: 99;
+    font-family: tattoo;
+    font-size: 26px;
+    bottom: 3%;
+    right: 1%;
+}
+
+/* ------------------------- */
+/* Slide Direccion */
+/* ------------------------- */
+
+
+.informacion article:nth-child(2) {
+    background-image: url('../images/cua.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.direccion .direc .cion {
+    position: relative;
+    z-index: 99;
+}
+
+.direccion .en{
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 90px;
+    left: 3%;
+    top: -100%;
+
+}
+
+.direccion .rocamora {
+    position: absolute;
+    font-family: fabulous;
+    font-size: 250px;
+    left: 2%;
+    top: 2%;
+}
+
+.direccion .once {
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 178px;
+    right: 3%;
+    top: 270%;
+
+}
+
+.direccion .irungaray {
+    position: absolute;
+    z-index: 99;
+    font-family: tattoo;
+    font-size: 26px;
+    bottom: 3%;
+    right: 1%;
+}
+
+/* ------------------------- */
+/* Slide Horarios */
+/* ------------------------- */
+
+.informacion article:nth-child(3) {
+    background-image: url('../images/tres.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.horarios {
+    position: relative;
+    z-index: 99;
+}
+
+.horarios .apertura{
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 90px;
+    left: 3%;
+    top: -180%;
+
+}
+
+.horarios .cierre {
+    position: absolute;
+    font-family: freshman;
+    font-size: 250px;
+    left: 2%;
+    top:550%;
+}
+
+/* ------------------------- */
+/* Precios */
+/* ------------------------- */
+
+.precios {
+    background: url("../images/cinco.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.precios .info .information {
+    position: relative;
+    z-index: 99;
+}
+
+.precios .promos {
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 120px;
+    top: 7%;
+    left: 20px;
+}
+
+.precios .listaUno {
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 75px;
+    left: 57%;
+    top: 67%;
+}
+
+.precios .listaDos {
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 75px;
+    left: 89%;
+    top: 67%;
+}
+
+.precios .promociones{
+    position: absolute;
+    z-index: 99;
+    font-family: freshman;
+    font-size: 55px;
+    left: 1%;
+    top: 73%;
+}
+
+.precios .irungaray {
+    position: absolute;
+    z-index: 99;
+    font-family: tattoo;
+    font-size: 26px;
+    bottom: 3%;
+    right: 1%;
+}
+
+/* ------------------------- */
+/* Flechas de Slide */
+/* ------------------------- */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    top:95%;
+}
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+
+.redes {
+    background-color: black;
+}
+
+.siguenos {
+    opacity: 0;
+    transition: 1.5s ease all;
+    font-family: freshman;
+    font-size: 80px;
+    letter-spacing: 10px;
+    position: absolute;
+    left: 9%;
+    top: 30%;
+    color: white;
+    text-shadow: 10px 7px 6px black;
+}
+
+.redes-sociales {
+    font-size: 200px;
+    position: absolute;
+    left: 37%;
+    top: 50%;
+    color: black;
+}
+
+.redes .irungaray {
+    opacity: 1s;
+    transition: 7s ease all;
+    position: absolute;
+    z-index: 99;
+    font-family: tattoo;
+    font-size: 26px;
+    bottom: 3%;
+    right: 1%;
+}
+
+footer .facebook i { color: #c13584; }
+footer .instagram i { color: #3b5998; }
+
+footer .facebook:hover { color: #c13584; }
+footer .instagram:hover { color: #3b5998; }
+
+footer .facebook:hover i { color: #fff; }
+footer .instagram:hover i { color: #fff; }
+
+@media screen and (max-height: 768px){
+
+  body{
+    background-color: black;
+  }
+
+  #fp-nav ul li .fp-tooltip {
+      font-size: 21px;
+  }
+
+  .nav li, .nav a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration:none;
+      text-transform: uppercase;
+      font-family: freshman;
+      font-size: 10.5px;
+      color: white;
+      text-shadow: 10px 7px 6px black;
+      transition: .5s ease;
+  }
+
+  .header .titulo .lavadero {
+      font-size: 30px;
+      right: 25%;
+      top: -100%;
+  }
+
+  .header .titulo .fairlane {
+      font-size: 154px;
+      left: 25%;
+      top: -250%;
+  }
+
+  .header .irungaray {
+      font-size: 18.2px;
+      bottom: 3%;
+      right: 1%;
+  }
+
+  .header .contenedor-icono {
+      left: 50%;
+      font-size: 35px;
+  }
+  .informacion .aprovecha{
+      font-size: 84px;
+      left: 3%;
+      top: -300%;
+
+  }
+
+  .informacion .nuestros {
+      font-size: 49px;
+      left: 10%;
+      top: -100%;
+  }
+
+  .informacion .increibles {
+      font-size: 168px;
+      right: 33%;
+      top: -2%;
+
+  }
+
+  .informacion .preciosz {
+      font-size: 84px;
+      right: 3%;
+      top: 390%;
+
+  }
+
+  .informacion .irungaray {
+      font-size: 18.2px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .direccion .en{
+      font-size: 63px;
+      left: 3%;
+      top: -100%;
+
+  }
+
+  .direccion .rocamora {
+      font-size: 175px;
+      left: 2%;
+      top: 2%;
+  }
+
+  .direccion .once {
+      font-size: 124.6px;
+      right: 3%;
+      top: 20%;
+
+  }
+
+  .direccion .irungaray {
+      font-size: 18.2px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .horarios .apertura{
+      font-size: 63px;
+      left: 3%;
+      top: -180%;
+
+  }
+  .horarios .cierre {
+      font-size: 175px;
+      left: 2%;
+      top:300%;
+  }
+  .precios .promos {
+      font-family: freshman;
+      font-size: 84px;
+      top: 7%;
+      left: 20px;
+  }
+
+  .precios .listaUno {
+      font-size: 52.5px;
+      left: 57%;
+      top: 67%;
+  }
+
+  .precios .listaDos {
+      font-size: 52.5px;
+      left: 89%;
+      top: 67%;
+  }
+
+  .precios .promociones{
+      font-size: 38.5px;
+      left: 1%;
+      top: 73%;
+  }
+
+  .precios .irungaray {
+      font-size: 18.2px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .siguenos {
+      font-size: 56px;
+      letter-spacing: 10px;
+      left: 9%;
+      top: 30%;
+  }
+
+  .redes-sociales {
+      font-size: 140px;
+      left: 37%;
+      top: 50%;
+      color: black;
+  }
+
+  .redes .irungaray {
+      font-size: 18.2px;
+      bottom: 3%;
+      right: 1%;
+  }
+
+  .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 360px){
+
+    *{
+        background-color: #c1c1c1 
+        text-align: center;
+    }
+
+  body{
+    background-image: url('pito.jpeg');
+    background-size: cover;
+  }
+
+  #fp-nav ul {
+      display: none;
+  }
+  .nav li, .nav a {
+      display: inline-block;
+      margin: 7px;
+      text-decoration:none;
+      text-transform: uppercase;
+      font-family: freshman;
+      font-size: 10.5px;
+      color: white;
+      text-shadow: 10px 7px 6px black;
+      transition: .5s ease;
+  }
+  .header .titulo .lavadero {
+      font-size: 14.14px;
+      right: 9%;
+      top: -200%;
+  }
+
+  .header .titulo .fairlane {
+      font-family: fabulous;
+      font-size: 72.38px;
+      left: 4%;
+      top: -250%;
+  }
+
+  .header .irungaray {
+      font-size: 8.55px;
+      bottom: 3%;
+      right: 1%;
+  }
+
+  .header .contenedor-icono {
+      bottom: 3%;
+      left: 50%;
+      font-size: 16.45px;
+      color: white;
+  }
+  .informacion .aprovecha{
+      font-size: 39.48px;
+      left: 3%;
+      top: -350;
+
+  }
+
+  .informacion .nuestros {
+      font-size: 30px;
+      left: 10%;
+      top: -100%;
+  }
+
+  .informacion .increibles {
+      font-size: 65px;
+      right: 0%;
+      top: 30%;
+
+  }
+
+  .informacion .preciosz {
+      font-size: 39.48px;
+      right: 3%;
+      top: 390%;
+
+  }
+
+  .informacion .irungaray {
+      font-size: 8.55px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .direccion .en{
+      font-size: 29.61px;
+      left: 3%;
+      top: -100%;
+
+  }
+
+  .direccion .rocamora {
+      font-size: 65px;
+      left: 2%;
+      top: 2%;
+  }
+
+  .direccion .once {
+      font-size: 58.56px;
+      right: 3%;
+      top: 270%;
+
+  }
+
+  .direccion .irungaray {
+      font-size: 8.55px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .horarios .apertura{
+      font-size: 29.61px;
+      left: 3%;
+      top: -180%;
+
+  }
+  .horarios .cierre {
+      font-size: 82.25px;
+      left: 2%;
+      top:550%;
+  }
+  .precios .promos {
+      font-size: 39.48px;
+      left: 2%;
+      top: 18%;
+  }
+
+  .precios .listaUno {
+      font-size: 24.67px;
+      left: 1px;
+      top: 79%;
+  }
+
+  .precios .listaDos {
+      font-size: 24.67px;
+      left: 78%;
+      top: 79%;
+  }
+
+  .precios .promociones{
+      font-size: 18.09px;
+      left: 16%;
+      top: 50%;
+  }
+
+  .precios .irungaray {
+      font-size: 8.55px;
+      bottom: 3%;
+      right: 1%;
+  }
+  .siguenos {
+      font-size: 26.32px;
+      letter-spacing: 10px;
+      position: absolute;
+      left: 9%;
+      top: 30%;
+      color: white;
+      text-shadow: 10px 7px 6px black;
+  }
+
+  .redes-sociales {
+      font-size: 65.8px;
+      left: 37%;
+      top: 50%;
+      color: black;
+  }
+
+  .redes .irungaray {
+      font-family: tattoo;
+      font-size: 8.55px;
+      bottom: 3%;
+      right: 1%;
+  }
+
+  .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev {
+    display: none;
+}
+
+.nav{
+  width: 100vw;
+}
