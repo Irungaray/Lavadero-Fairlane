@@ -353,6 +353,7 @@
 .fp-controlArrow.fp-next,
 .fp-controlArrow.fp-prev {
     top:95%;
+    background-color: white;
 }
 
 /* ------------------------- */
@@ -404,13 +405,14 @@ footer .instagram:hover { color: #3b5998; }
 footer .facebook:hover i { color: #fff; }
 footer .instagram:hover i { color: #fff; }
 
+/* ------------------------- */
+/* RESOLUCION 768 */
+/* ------------------------- */
+
 @media screen and (max-height: 768px){
 
-  body{
-    background-color: black;
-  }
-
   #fp-nav ul li .fp-tooltip {
+      color: white;
       font-size: 21px;
   }
 
@@ -572,17 +574,33 @@ footer .instagram:hover i { color: #fff; }
 
 }
 
-@media screen and (max-width: 360px){
+/* ------------------------- */
+/* RESOLUCION 360 */
+/* ------------------------- */
+
+@media screen and (max-width: 400px){
+
+    .informacion article:nth-child(1) {
+        background: #1d1d1d }
+
+    .informacion article:nth-child(2) {
+        background: #1d1d1d; }
+
+    .informacion article:nth-child(3) {
+        background: #1d1d1d; }
+
+    .precios {
+        background: #1d1d1d;
+    }
 
     *{
-        background-color: #c1c1c1 
         text-align: center;
     }
 
-  body{
-    background-image: url('pito.jpeg');
-    background-size: cover;
-  }
+    #fp-nav ul li {
+        background-color: white;
+        font-size: 21px;
+    }
 
   #fp-nav ul {
       display: none;
@@ -625,14 +643,13 @@ footer .instagram:hover i { color: #fff; }
   }
   .informacion .aprovecha{
       font-size: 39.48px;
-      left: 3%;
-      top: -350;
-
+      left: 10%;
+      top: -237%;
   }
 
   .informacion .nuestros {
       font-size: 30px;
-      left: 10%;
+      left: 3%;
       top: -100%;
   }
 
@@ -646,7 +663,7 @@ footer .instagram:hover i { color: #fff; }
   .informacion .preciosz {
       font-size: 39.48px;
       right: 3%;
-      top: 390%;
+      top: 320%;
 
   }
 
@@ -681,15 +698,15 @@ footer .instagram:hover i { color: #fff; }
       right: 1%;
   }
   .horarios .apertura{
-      font-size: 29.61px;
-      left: 3%;
-      top: -180%;
+    font-size: 60px;
+    left: 2%;
+    top: 188%;
 
   }
   .horarios .cierre {
-      font-size: 82.25px;
-      left: 2%;
-      top:550%;
+    font-size: 65px;
+    left: 3%;
+    top: 426%;
   }
   .precios .promos {
       font-size: 39.48px;
@@ -698,8 +715,9 @@ footer .instagram:hover i { color: #fff; }
   }
 
   .precios .listaUno {
+      text-align: left;
       font-size: 24.67px;
-      left: 1px;
+      left: 10px;
       top: 79%;
   }
 
@@ -751,3 +769,5 @@ footer .instagram:hover i { color: #fff; }
 .nav{
   width: 100vw;
 }
+}
+
