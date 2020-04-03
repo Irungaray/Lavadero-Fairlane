@@ -575,10 +575,13 @@ footer .instagram:hover i { color: #fff; }
 }
 
 /* ------------------------- */
-/* RESOLUCION 360 */
+/* RESOLUCION CELULARES */
 /* ------------------------- */
 
-@media screen and (max-width: 400px){
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) {
 
     .informacion article:nth-child(1) {
         background: #1d1d1d }
